@@ -1,4 +1,4 @@
-import './App.css'; // Optional if you still want to keep default styles (but Tailwind will override most)
+import './App.css'; 
 import {
   Layout,
   Package,
@@ -11,17 +11,26 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 
+
+
 // Dashboard View Component
 const DashboardView = () => (
   <div className="p-6 space-y-6">
     <div className="grid grid-cols-4 gap-6">
-      {['Products', 'Sales', 'Suppliers', 'Customers'].map((item) => (
-        <div key={item} className="bg-white rounded-lg shadow p-6">
-          <h3 className="text-lg font-semibold text-gray-800">{item}</h3>
+      {[
+        { label: 'Products', icon: Package },
+        { label: 'Sales', icon: TrendingUp },
+        { label: 'Suppliers', icon: Users },
+        { label: 'Customers', icon: Users },
+      ].map(({ label, icon: Icon }) => (
+        <div key={label} className="bg-white rounded-lg shadow p-6 block block-col items-center">
+          <Icon className="h-10 w-10 text-blue-600 mb-2" />
+          <h3 className="text-lg font-semibold text-gray-800">{label}</h3>
           <p className="text-3xl font-bold text-blue-600 mt-2">0</p>
         </div>
       ))}
     </div>
+
 
     <div className="grid grid-cols-2 gap-6">
       <div className="bg-white rounded-lg shadow p-6">
@@ -178,7 +187,7 @@ const DeliveryTrackingView = () => (
 
 function App() {
   const [currentView, setCurrentView] = useState('dashboard');
-
+  
   const renderView = () => {
     switch (currentView) {
       case 'dashboard':
