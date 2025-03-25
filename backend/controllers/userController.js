@@ -135,9 +135,10 @@ export const updateUser = async (req, res) => {
       user.lastName = lastName;
       user.nic = nic;
       user.dob = dob;
+      user.age = age;
       user.gender = gender;
-      user.email = email;
       user.contactNumber = contactNumber;
+      user.email = email;
       
       // Save updated user
       await user.save();
