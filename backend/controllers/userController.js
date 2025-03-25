@@ -21,9 +21,10 @@ export const registerUser = async (req, res) => {
       lastName,
       nic,
       dob,
+      age,
       gender,
-      email,
       contactNumber,
+      email,
     });
 
     // Save user to database
