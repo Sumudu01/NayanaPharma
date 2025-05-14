@@ -1,0 +1,246 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Enhanced dashboard feature section styles */
+.dashboard-feature-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-feature-section-top {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dashboard-feature-section-top h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.dashboard-feature-section-bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dashboard-feature-section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 200px;
+    flex: 1;
+    color: #36200a;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #4682B4;
+}
+
+.dashboard-feature-section-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-feature-section-info h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.feature-icon {
+    background-color: rgba(70, 130, 180, 0.1);
+    color: #4682B4;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.count-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4682B4;
+    margin: 5px 0;
+}
+
+.count-description {
+    font-size: 12px;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Secondary metrics styling */
+.secondary-metric {
+    border-left: 5px solid #5F9EA0;
+}
+
+.feature-icon.secondary {
+    background-color: rgba(95, 158, 160, 0.1);
+    color: #5F9EA0;
+}
+
+.secondary-metric .count-value {
+    color: #5F9EA0;
+}
+
+/* Pie chart styles */
+.pie-chart-container {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(14, 7, 7, 0.1);
+    padding: 20px;
+}
+
+.pie-chart-container h5 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.no-data-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 18px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Table styles */
+.supplier-table-container {
+    max-width: 100%;
+    margin: 10px ;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.supplier-table-main-heading {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.supplier-table-summary {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.supplier-table-header {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+}
+
+.supplier-table-data {
+    padding: 10px;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--dark-color);
+}
+
+.supplier-table-row:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.supplier-table-data:last-child {
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+
+/* Button styles */
+.MuiButton-root {
+    text-transform: none;
+}
+
+/* Dialog styles */
+.MuiDialog-paper {
+    border-radius: 8px;
+}
+
+.dialog-title {
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-feature-section-bottom {
+        flex-direction: column;
+    }
+    
+    .dashboard-feature-section-info {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+/* Add these styles to your existing sup_dashboard.css */
+
+.server-status-indicator {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.server-status-indicator.offline {
+  background-color: rgba(245, 34, 45, 0.1);
+  color: #f5222d;
+  border: 1px solid rgba(245, 34, 45, 0.2);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.offline .status-dot {
+  background-color: #f5222d;
+}
+
+.error-message {
+  background-color: #ffe8e8;
+  border-left: 5px solid #ff4d4f;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #cf1322;
+  font-weight: 500;
+}

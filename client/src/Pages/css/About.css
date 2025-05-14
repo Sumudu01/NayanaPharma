@@ -1,0 +1,127 @@
+.about-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .about-hero {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .about-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .about-section h2 {
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: #f8f9fa;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mission {
+    background-color: #e8f4fc;
+    border-left: 5px solid #3498db;
+  }
+  
+  .about-cta {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .cta-button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .about-hero h1 {
+      font-size: 2rem;
+    }
+    
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .about-section {
+      padding: 1.5rem;
+    }
+  }

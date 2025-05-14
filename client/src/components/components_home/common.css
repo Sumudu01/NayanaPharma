@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geologica", sans-serif;
+  }
+
+
+  :root {
+    --white: white;
+    --background-color: #f6f6f6;
+    --primary-color: #E1E8F8; /* Light navy tint */
+    --secondary-color: #6F7FAF; /* Muted navy blue */
+    --accent-color: #2D3C74; /* Deep navy accent */
+    --dark-color: #102054; /* Dark navy */
+  }
+  
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}

@@ -1,0 +1,216 @@
+.dashboard-container {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.dashboard-title {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.dashboard-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card-count {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3498db;
+    margin: 1rem 0;
+}
+
+.card-button {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #3498db;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #2980b9;
+}
+
+/* Logout button styling - top right alignment with decreased width */
+.logout-button {
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  width: auto; /* Auto width based on content */
+  max-width: 120px; /* Maximum width */
+  white-space: nowrap; /* Prevent text wrapping */
+  margin-left: auto; /* Push to right */
+  align-self: flex-start; /* Align to top */
+}
+
+.d-flex.justify-content-between.align-items-center.mb-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 1rem;
+    }
+
+    .card-count {
+        font-size: 2rem;
+    }
+
+    .dashboard-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Add these styles to your existing Dashboard.css */
+
+.error-box {
+  background-color: #ffe8e8;
+  border-left: 5px solid #ff4d4f;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #cf1322;
+  font-weight: 500;
+}
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #1e90ff;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.server-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.server-status.online {
+  background-color: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+  border: 1px solid rgba(82, 196, 26, 0.2);
+}
+
+.server-status.offline {
+  background-color: rgba(245, 34, 45, 0.1);
+  color: #f5222d;
+  border: 1px solid rgba(245, 34, 45, 0.2);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.online .status-dot {
+  background-color: #52c41a;
+}
+
+.offline .status-dot {
+  background-color: #f5222d;
+}
+
+.alert-box {
+  background-color: #e6f7ff;
+  border-left: 5px solid #1890ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.alert-box h4 {
+  margin-top: 0;
+  color: #0050b3;
+}
+
+.alert-box ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.alert-box li {
+  margin-bottom: 8px;
+}
+
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.delivery-table th {
+  background-color: #f0f2f5;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.delivery-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.delivery-table tr:hover {
+  background-color: #f9fafb;
+}

@@ -1,0 +1,180 @@
+/* SalesReport.css */
+.sales-report-container {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.filter-card {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+/* Print styles */
+@media print {
+  .d-print-none {
+    display: none !important;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    box-shadow: none !important;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  h2 {
+    font-size: 18pt;
+    margin-bottom: 15px;
+  }
+  
+  h5 {
+    font-size: 12pt;
+  }
+}
+
+/* Chart container styles */
+.recharts-responsive-container {
+  margin: 0 auto;
+}
+
+/* Table styles */
+.table-responsive {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: #f1f5f9;
+  border-bottom: 2px solid #e2e8f0;
+  color: #475569;
+  font-weight: 600;
+}
+
+.table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* DatePicker customization */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Tabs customization */
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 1rem;
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: -1px;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #e9ecef #e9ecef #dee2e6;
+  color: #495057;
+}
+
+.nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  font-weight: 600;
+}
+
+/* Dropdown customization */
+.dropdown-menu {
+  padding: 0.5rem 0;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Badge customization */
+.badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .dashboard-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .filter-card .row > div {
+    margin-bottom: 1rem;
+  }
+}

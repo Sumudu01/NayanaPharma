@@ -1,0 +1,136 @@
+/* General styles */
+:root {
+  --white: white;
+  --background-color: #f6f6f6;
+  --primary-color: #E1E8F8; /* Light navy tint */
+  --secondary-color: #6F7FAF; /* Muted navy blue */
+  --accent-color: #2D3C74; /* Deep navy accent */
+  --dark-color: #102054; /* Dark navy */
+}
+
+/*----------------- Subnavbar ----------------*/
+
+.logo-small {
+width: 200px; /* Adjust size as needed */
+height: auto;
+cursor: pointer;
+margin-top: 25px;
+}
+
+.subnav-container {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+padding: 8px 20px;
+background-color: var(--secondary-color);
+margin-bottom: 10px;
+position: -webkit-sticky; /* Safari support */
+position: sticky;
+top: 0;
+z-index: 1000; /* Ensures it's above other elements */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+}
+
+.subnav-link {
+margin-left: 40px;
+color: var(--white);
+text-decoration: none;
+font-size: 1.1rem;
+font-weight: 600;
+transition: color 0.3s ease;
+}
+
+.subnav-link:hover {
+color: var(--dark-color-color);
+}
+
+/* Search bar container */
+.search-container {
+position: relative;
+display: flex;
+align-items: center;
+margin-right: 300px;
+margin-left: 50px;
+}
+
+.subnav-search {
+padding: 0px 5px;
+padding-left: 30px; 
+margin-right: 10px;
+font-size: 1rem;
+border: 2px solid var(--accent-color);
+border-radius: 4px;
+width: 400px;
+background-color: var(--white);
+}
+
+.search-icon {
+left: 10px;
+color: var(--primary-color);
+cursor: pointer;
+}
+
+
+/*----------------- Footer ----------------*/
+.footer-wrapper {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: auto;
+padding: 3% 7% 5% 10%;
+background-color: var(--secondary-color);
+}
+
+.footer-section-one {
+max-width: 40%;
+}
+
+.footer-section-two {
+flex: 1;
+display: flex;
+justify-content: space-between;
+gap: 2rem;
+}
+
+.footer-section-columns {
+display: flex;
+flex-direction: column;
+min-width: 190px;
+}
+
+.footer-section-columns span {
+margin: 0.25rem 0;
+font-weight: 600;
+color: var(--white);
+cursor: pointer;
+transition: color 0.2s ease;
+}
+
+.footer-section-columns span:hover {
+color: var(--primary-color);
+}
+
+.footer-logo-text {
+font-size: 1rem;
+color: var(--white);
+line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+.footer-wrapper {
+  flex-direction: column;
+  padding: 5% 10%;
+}
+.footer-section-one {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+.footer-section-two {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-section-columns {
+  margin: 1rem 0;
+  width: 100%;
+}
+}

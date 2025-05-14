@@ -1,0 +1,140 @@
+/* Billing Page Styles */
+.billing-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Customer Information Section */
+.customer-info {
+  background-color: #ffffff;
+  border-radius: 6px;
+  height: 100%;
+  min-height: 120px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.customer-info h5 {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 0.5rem;
+}
+
+.customer-info p {
+  font-size: 0.95rem;
+}
+
+.customer-info-placeholder {
+  background-color: #ffffff;
+  border-radius: 6px;
+  height: 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Table Styles */
+.table-responsive {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+  background-color: #f1f5f9;
+  color: #2c3e50;
+  font-weight: 600;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* Cart Styles */
+.cart-empty {
+  padding: 2rem;
+  text-align: center;
+  color: #6c757d;
+}
+
+.cart-item {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item-name {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.cart-item-price {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.cart-total {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-top: 2px solid #e9ecef;
+}
+
+.cart-total-label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.cart-total-amount {
+  font-weight: 700;
+  color: #f9a825;
+  font-size: 1.2rem;
+}
+
+/* Quantity Controls */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #4682B4;
+  color: white;
+}
+
+.quantity-control input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin: 0 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .customer-info, .customer-info-placeholder {
+    margin-top: 1rem;
+  }
+}

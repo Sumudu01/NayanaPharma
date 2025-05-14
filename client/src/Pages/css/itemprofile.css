@@ -1,0 +1,297 @@
+/* Base Styles */
+.item-profile-container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.landscape-container {
+  max-width: 95%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Header Section */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.search-section {
+  position: relative;
+  width: 300px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.search-input {
+  padding-left: 60px;
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  height: 40px;
+}
+
+.search-input:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Table Styles */
+.inventory-table {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-header {
+  background-color: #2c3e50;
+}
+
+.table-header th {
+  color: white;
+  padding: 12px 15px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.inventory-table td {
+  padding: 10px 15px;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+}
+
+.low-stock {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-badge.available {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.expired {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.refilled {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.actions-column {
+  width: 180px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  font-size: 0.85rem;
+}
+
+.icon {
+  font-size: 0.9rem;
+}
+
+/* Report Section */
+.report-section {
+  text-align: right;
+  margin-top: 1.5rem;
+}
+
+.generate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.report-icon {
+  font-size: 1.1rem;
+}
+
+/* Modal Styles */
+.warning-icon {
+  font-size: 3rem;
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+
+.confirmation-text {
+  font-size: 1.2rem;
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* No Orders Alert */
+.no-orders-alert {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .search-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landscape-container {
+    padding: 1rem;
+  }
+  
+  .inventory-table {
+    font-size: 0.9rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .action-btn {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .item-profile-container {
+    padding: 1rem;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .inventory-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Report styling */
+.report-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.low-stock {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+}
+
+.status-badge.available {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.status-badge.expired {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.status-badge.refilled {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Chart styling */
+.chart-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Make sure tables in reports are properly styled */
+.inventory-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+}
+
+.table-header {
+  background-color: #f8f9fa;
+}
+
+/* Hide action buttons when generating PDF */
+@media print {
+  .action-buttons,
+  .actions-column {
+    display: none !important;
+  }
+  
+  .report-title {
+    font-size: 18pt;
+    margin-bottom: 20pt;
+  }
+}

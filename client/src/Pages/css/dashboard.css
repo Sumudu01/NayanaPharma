@@ -1,0 +1,296 @@
+.inventory-dashboard {
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Dashboard title styling - ensure it stays on one line */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0; /* Remove bottom margin */
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis if needed */
+}
+
+.dashboard-title .me-2 {
+  margin-right: 0.5rem !important;
+}
+
+.alert-low-stock {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
+  display: flex;
+  align-items: center;
+}
+
+.summary-cards {
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+}
+
+.summary-card .card-body {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.total-products .card-icon {
+  background-color: #3498db;
+}
+
+.sold-products .card-icon {
+  background-color: #2ecc71;
+}
+
+.available-stock .card-icon {
+  background-color: #e74c3c;
+}
+
+.summary-card .card-title {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.summary-card .card-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.search-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #95a5a6;
+}
+
+.search-input {
+  padding-left: 4%; /* Increased from 30px to create more space */
+  border-radius: 25px;
+  border: 1px solid #dfe6e9;
+  box-shadow: none;
+}
+
+.search-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.products-grid {
+  margin-bottom: 2rem;
+}
+
+.product-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.product-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+.product-card .card-body {
+  padding: 1.5rem;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.product-details {
+  margin-top: 1.5rem;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #27ae60;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.product-stock, .product-sold {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 0.3rem;
+}
+
+.stock-label, .sold-label {
+  font-weight: 600;
+  color: #34495e;
+  margin-right: 0.5rem;
+}
+
+.low-stock {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.no-products {
+  text-align: center;
+  padding: 3rem;
+  color: #95a5a6;
+  font-size: 1.1rem;
+}
+
+/* Top header with title and generate PDF button */
+.d-flex.justify-content-between.align-items-center.mb-4 {
+  display: flex;
+  flex-direction: row; /* Change back to row */
+  justify-content: space-between; /* Space between title and button */
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%; /* Ensure full width */
+}
+
+/* Generate PDF Button - Top right alignment with decreased width */
+.generate-pdf-btn {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #4361ee;
+  border-color: #4361ee;
+  transition: all 0.3s ease;
+  width: auto; /* Auto width based on content */
+  max-width: 250px; /* Maximum width */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.generate-pdf-btn:hover {
+  background-color: #2757bd;
+  border-color: #0c3ca3;
+}
+
+.generate-pdf-btn:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.generate-pdf-btn .me-2 {
+  margin-right: 0.5rem !important;
+}
+
+/* Responsive adjustments for the button */
+@media (max-width: 768px) {
+  .d-flex.justify-content-between.align-items-center.mb-4 {
+    flex-direction: row; /* Keep as row even on mobile */
+    flex-wrap: wrap;
+  }
+  
+  .generate-pdf-btn {
+    margin-left: auto; /* Keep pushed to right */
+    width: auto; /* Don't make full width */
+  }
+}
+
+/* Analytics styles */
+.analytics-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.analytics-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.analytics-card .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+  padding: 1rem 1.5rem;
+}
+
+.analytics-card .card-header h5 {
+  margin: 0;
+  font-weight: 600;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+}
+
+.product-supplier {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 0.3rem;
+}
+
+.supplier-label {
+  font-weight: 600;
+  color: #34495e;
+  margin-right: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+  
+  .summary-card .card-text {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+

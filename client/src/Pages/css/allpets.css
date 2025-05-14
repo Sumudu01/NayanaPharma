@@ -1,0 +1,215 @@
+/* Container for all ads */
+.all-ads {
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+/* Search bar container */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.filter-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: absolute;
+  top:25%;
+  left:5%
+}
+
+.filter-details input[type='number'],
+.filter-details input[type='text'],
+.filter-details button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.filter-details input[type='number'],
+.filter-details input[type='text'] {
+  flex: 1;
+  max-width: calc(50% - 1rem); /* Adjust width for responsive design */
+}
+
+.filter-details button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.filter-details button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Adjust margins and padding for better spacing */
+.filter-details input,
+.filter-details button {
+  margin-bottom: 1rem;
+}
+
+
+.search input {
+  width: 18%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  position: absolute;
+  top:17%;
+  left:60%
+}
+.post-ad-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.post-ad-button {
+  background-color: #ac9b08; /* Primary color */
+  color: #ffffff; /* White text */
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top:17%;
+  left:20%
+}
+
+.post-ad-button:hover {
+  background-color: #050c29; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.post-ad-button:active {
+  background-color: #e9ec0a; /* Even darker shade on click */
+  transform: translateY(0); /* Reset lift on click */
+}
+.search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top:17%;
+  left:80%
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+/* Ads container */
+.a-ad {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual ad container */
+.ad-with-photo-name-price {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex; /* Added to use flexbox */
+  overflow: hidden;
+  position: relative; /* Added for positioning */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ad-with-photo-name-price:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image container within an ad */
+.image-container {
+  width: 40%; /* Adjusted width for image */
+  height: 180px;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevents image from shrinking */
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Details container within an ad */
+.details-container {
+  padding: 15px;
+  flex-grow: 1; /* Allows details container to grow */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Adjusted for top alignment */
+  position: relative; /* Added for positioning */
+}
+
+.details-container .pet-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center; /* Centered pet name */
+  position: absolute; /* Positioned absolutely */
+  top: 10px; /* Adjusted for top positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details-container #pet-price {
+  font-size: 18px;
+  color: #007bff;
+  font-weight: 500;
+  text-align: center; /* Centered pet price */
+  position: absolute; /* Positioned absolutely */
+  bottom: 10px; /* Adjusted for bottom positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* No matching orders message */
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 24px;
+  font-weight: 600;
+  color: #777;
+}

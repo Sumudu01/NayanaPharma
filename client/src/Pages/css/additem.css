@@ -1,0 +1,195 @@
+/* AddItem Page Styles - Enhanced Design */
+.add-item-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 2rem;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background: linear-gradient(135deg, #2D3C74 0%, #102054 100%);
+  color: white;
+}
+
+.card-body {
+  padding: 1.5rem;
+  background-color: #ffffff;
+}
+
+/* Form Controls */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #e1e8f8;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #6F7FAF;
+  box-shadow: 0 0 0 0.2rem rgba(45, 60, 116, 0.15);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+/* Button Styling */
+.btn-primary {
+  background: linear-gradient(135deg, #2D3C74 0%, #102054 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(16, 32, 84, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2199e9 0%, #2eadf7 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(16, 32, 84, 0.3);
+}
+
+/* Custom Tabs */
+.nav-tabs {
+  border-bottom: 1px solid #e1e8f8;
+  margin-bottom: 1.5rem;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  color: #6c757d;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #2D3C74;
+  border-bottom-color: #6F7FAF;
+}
+
+.nav-tabs .nav-link.active {
+  color: #2D3C74;
+  border-bottom-color: #2D3C74;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+/* Charts Container */
+.chart-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.chart-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Error Messages */
+.error {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+/* Image Upload */
+.image-upload-container {
+  border: 2px dashed #e1e8f8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.image-upload-container:hover {
+  border-color: #6F7FAF;
+  background-color: #f8f9fa;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .card-header {
+    padding: 1rem 1.25rem;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-tabs .nav-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .chart-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title {
+    font-size: 1.4rem;
+  }
+  
+  .card-header h4 {
+    font-size: 1.1rem;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+  }
+  
+  .nav-tabs {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+  }
+  
+  .nav-tabs .nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+}
+
